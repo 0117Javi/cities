@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>weather Dash</title>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+   <script src="index.js"></script>
+</head>
+<body>
+    <header class="container-fluid bg-dark text-light">
+        <div class="text-center">
+            <h1>Weather Dashboard</h1>
+        </div>
+    </header>  
+    <div class="row">
+        <div class="col-4">
+            <h3>search for a city:</h3>
+            <input type="search" class="form-control rounded" placeholder="Search" id="search-me"/>
+                <button type="button" id="search" class="btn btn-outline-primary">search</button>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-action" id=""></li>
+                        <li class="list-group-item list-group-item-action" id=""></li>
+                        <li class="list-group-item list-group-item-action" id=""></li>
+                        <li class="list-group-item list-group-item-action" id=""></li>
+                        <li class="list-group-item list-group-item-action" id=""></li>
+                        <li class="list-group-item list-group-item-action" id=""></li>
+                        <li class="list-group-item list-group-item-action" id=""></li>
+                        <li class="list-group-item list-group-item-action" id=""></li>
+                    </ul>
+        </div>
+        <div class="col-6">
+            <table class="table table-borderless">
+                <thead>
+                </thead>
+                <tbody>
+                  <tr id="info">
+                    <th id="city" scope="row">City:</th>
+                  </tr>
+                  <tr>
+                    <th id="temp" scope="row">Temp:</th>
+                  </tr>
+                  <tr>
+                    <th id="humd" scope="row">Humidity:</th>
+                  </tr>
+                  <tr>
+                    <th id="ws" scope="row">Wind Speed:</th>
+                  </tr>
+                  <tr>
+                    <th id="uv" scope="row">UV Index:</th>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+</body>
