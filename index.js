@@ -1,9 +1,24 @@
 $(document).ready(function() {
+var cityList = JSON.parse(localStorage.getItem("cityList"))||[] 
+console.log(cityList)
 
+  function displayHistory() {
+    $(".cityList").html("");
+    for (var i = 0; i< cityList.length; i++ ){
+      var li = $("<li>").text(cityList[i])
+      $(".cityList").append(li)
+    } 
+  }
+  displayHistory()
 
     $("#search").on("click", function(){
-        console.log('it worked', $('#search-me').val())
-        getMainWeather($('#search-me').val())
+        var cityName = $('#search-me').val()
+        console.log('it worked', cityName)
+        if (cityList.indexOf(cityName)===-1){
+          cityList.push(cityName)
+          localStorage.setItem("cityList", JSON.stringify(cityList))
+        }
+        getMainWeather(cityName)
       });
 
 
@@ -40,32 +55,6 @@ function fiveDay(lat,lon) {
 
 
 
+}) 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-})
