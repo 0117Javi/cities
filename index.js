@@ -38,10 +38,7 @@ console.log(cityList)
       }  
 
 
-        
-
-
-function fiveDay(lat,lon) {
+      function fiveDay(lat,lon) {
           console.log('Time tod o 5day!!')
 
           var fiveDayUrl= "https://api.openweathermap.org/data/2.5/onecall?lat=" +lat+"&lon="+lon+"&exclude=current,minutely,hourly,alrets&appid=bd0834857d11c7c26292f5e1e8657635&units=imperial"
@@ -50,10 +47,6 @@ function fiveDay(lat,lon) {
            
         }})
         }
-
-
-
-
 
 }) 
 
