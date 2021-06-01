@@ -61,7 +61,7 @@ $(document).ready(function () {
           var temp = $("<p>");
           var date = $("<p>");
           var iconurl =
-            "http://openweathermap.org/img/w/" +
+            "https://openweathermap.org/img/w/" +
             result.daily[i].weather[0].icon +
             ".png";
 
