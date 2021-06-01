@@ -23,7 +23,7 @@ $(document).ready(function () {
 
   function getMainWeather(city) {
     var apiUrl =
-      "http://api.openweathermap.org/data/2.5/weather?q=" +
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
       city +
       "&appid=bd0834857d11c7c26292f5e1e8657635&units=imperial";
     $.ajax({
